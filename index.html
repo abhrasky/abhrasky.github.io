@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompankotech Pvt. Ltd.</title>
+    <link rel="icon" type="image/png" href="KTPL_LOGO1.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            color: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #111;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 55px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00aaff;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background: #f5f5f5;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #222, #000);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .hero.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #00aaff;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section h2 {
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .service-box {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #888;
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+            display: none;
+            transition: opacity 0.3s ease;
+        }
+        #scrollTopBtn:hover {
+            background-color: #0088cc;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #111;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            }
+            nav.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="KTPL_LOGO1.png" alt="Kompankotech Logo">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navbar">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="https://abhrasky.github.io/login">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero fade-section">
+        <h1>Kompankotech Pvt. Ltd.</h1>
+        <p>Resonance of Technology</p>
+    </section>
+
+    <section id="about" class="section fade-section">
+        <h2>About Us</h2>
+        <p>
+            Kompankotech Pvt. Ltd. is a technology-driven company providing <b>technical consultancy</b> and <b>industrial training</b> in domains such as <b>IoT, Artificial Intelligence, and PCB Design</b>.
+            We aim to empower engineers and industries by delivering innovative solutions that resonate with technology.
+        </p>
+    </section>
+
+    <section id="services" class="section fade-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Technical Consultancy</h3>
+                <p>End-to-end solutions for embedded systems, AI, and product design tailored to industry needs.</p>
+            </div>
+            <div class="service-box">
+                <h3>Industrial Training</h3>
+                <p>Hands-on workshops on IoT, AI, and PCB Design — bridging the gap between academia and industry.</p>
+            </div>
+            <div class="service-box">
+                <h3>Custom Projects</h3>
+                <p>Collaborative R&D support and project development for startups, industries, and research institutes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section fade-section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:care@ktplin.com">care@ktplin.com</a></p>
+    </section>
+
+    <footer>
+        &copy; 2026 Kompankotech Pvt. Ltd. | Designed by Kompankotech Team
+    </footer>
+
+    <button id="scrollTopBtn">▲</button>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const sections = document.querySelectorAll('.fade-section, .hero, .section');
+
+        // Toggle menu for mobile
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Fade-in on scroll
+        const revealOnScroll = () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Scroll to top button
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
