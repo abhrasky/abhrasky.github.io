@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Login - Kompankotech Pvt Ltd</title>
+
+  <link href="static/assets/img/ktpl_icon.jpg" rel="icon">
+  <link href="static/assets/img/KTPL_LOGO1.png" rel="apple-touch-icon">
+
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f6fa;
+      font-family: "Poppins", sans-serif;
+    }
+    .login-container {
+      max-width: 420px;
+      margin: 140px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .login-container h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #012970;
+    }
+    .flash {
+      text-align: center;
+      color: #d9534f;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="home.html" class="logo d-flex align-items-center">
+        <img src="static/assets/img/KTPL_LOGO1.png" alt="">
+        <span>Kompankotech</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul id="navList">
+          <li><a class="nav-link scrollto" href="home.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="home.html#about">About us</a></li>
+          <li class="dropdown"><a href="#"><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a>AI Solutions</a></li>
+              <li><a>IoT Solutions</a></li>
+              <li><a>Power Converter Solutions</a></li>
+              <li><a>Motor Controller Solutions</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="home.html#contact">Contact</a></li>
+          <span id="userMenu"></span>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Login Section ======= -->
+  <section id="login-section" class="mt-5 pt-5">
+    <div class="login-container">
+      <h3>Member Login</h3>
+      <div id="flash"></div>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+      <p class="mt-3 text-center">
+        <a href="home.html" style="text-decoration:none;">← Back to Home</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="home.html" class="logo d-flex align-items-center">
+              <img src="static/assets/img/KTPL_LOGO1.png" alt="">
+              <span>Kompankotech</span>
+            </a>
+            <p>Follow us in social media.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="home.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="home.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Solutions</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i><a>AI Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i><a>IoT Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i><a>Power Converter Solutions</a></li>
+              <li><i class="bi bi-chevron-right"></i><a>Motor Controller Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Nadia <br>
+              West Bengal 741245<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 9476359071<br>
+              <strong>Email:</strong> kompanko22@gmail.com<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kompankotech Pvt Ltd.</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/js/main.js"></script>
+
+  <!-- ======= Dynamic Login Script ======= -->
+  <script>
+    const API_URL = "https://api.ktpl.in"; // your FastAPI backend
+
+    // --- Flash messages ---
+    const flashMessage = localStorage.getItem("flash");
+    if (flashMessage) {
+      document.getElementById("flash").innerHTML = `<div class="flash">${flashMessage}</div>`;
+      localStorage.removeItem("flash");
+    }
+
+    // --- Handle login ---
+    document.getElementById("loginForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      try {
+        const res = await fetch(`${API_URL}/login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password })
+        });
+        const data = await res.json();
+
+        if (res.ok) {
+          localStorage.setItem("username", username);
+          localStorage.setItem("flash", "Login successful!");
+          window.location.href = "home.html";
+        } else {
+          document.getElementById("flash").innerHTML =
+            `<div class="flash">${data.detail || "Invalid credentials."}</div>`;
+        }
+      } catch (err) {
+        document.getElementById("flash").innerHTML =
+          `<div class="flash">Server not reachable.</div>`;
+      }
+    });
+
+    // --- User Menu in Navbar ---
+    const userMenu = document.getElementById("userMenu");
+    const user = localStorage.getItem("username");
+    if (user) {
+      userMenu.innerHTML = `
+        <li class="dropdown">
+          <a href="#"><span>Hello ${user}</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+          </ul>
+        </li>`;
+    } else {
+      userMenu.innerHTML = `<li><a class="getstarted scrollto" href="login.html">Log in</a></li>`;
+    }
+
+    // --- Logout handler ---
+    document.addEventListener("click", (e) => {
+      if (e.target && e.target.id === "logoutBtn") {
+        e.preventDefault();
+        localStorage.removeItem("username");
+        localStorage.setItem("flash", "You have been logged out.");
+        window.location.href = "home.html";
+      }
+    });
+  </script>
+</body>
+</html>
